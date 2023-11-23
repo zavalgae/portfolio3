@@ -1,0 +1,460 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	scroll-behavior: smooth;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{
+	text-decoration: none;
+	color:black;
+}
+/*JS----------------------------------------------------------------------*/
+.blink {
+	animation: blink 0.6s infinite;
+	font-size: 5rem;
+	color: #fff;
+  }
+  
+  @keyframes blink {
+	to {
+	  opacity: 0;
+	}
+  }
+/*header-------------------------------------------------------------------*/
+header{
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	position: fixed;
+}
+header > ul{
+	background: rgba(0,0,0,.6);
+	width: 775px;
+	height: 64px;
+	display: flex;
+	justify-content: center;
+	border-radius: 2px 2px 30px 30px;
+	color: #acacac;
+	font-weight: bold;
+}
+header > ul > li{
+	padding: 16px 32px 16px 32px;
+}
+header > ul > li > a{
+	color: #acacac;
+}
+header > ul > li > a:hover{
+	color:#fff;
+}
+
+header > ul > li:hover{
+	color: #fff;
+	cursor: pointer;
+}
+/*main---------------------------------------------------------------------*/
+
+main > :nth-child(1){
+	background-image: url(./img1.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 5rem;
+	font-weight: bold;
+}
+h1{
+	color: rgb(255, 255, 255);
+}
+main > :nth-child(2){
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+main > :nth-child(2) > :first-child{
+	width: 201px;
+	height: 111px;
+	margin: 60px 50px;
+	display: flex;
+	align-items: center;
+	font-size: 38px;
+	letter-spacing: -0.5px;
+	line-height: 54px;
+
+}
+main > :nth-child(2) > :nth-child(2){
+	width: 943px;
+	height: 140px;
+	margin: 60px 50px;
+	display: flex;
+	gap: 32px;
+	flex-direction: column;
+	justify-content: center;
+}
+main > :nth-child(2) > :nth-child(2) > :nth-child(1){
+	font-size: 32px;
+	font-weight: bold;
+	letter-spacing: -0.5px;
+	line-height: 48px;
+
+}
+
+main > :nth-child(2) > :nth-child(2) > :nth-child(2){
+	font-size: 16px;
+	letter-spacing: -0.5px;
+	line-height: 24px;
+
+}
+main > :nth-child(3){
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	background-color: #e7e6e6;
+}
+main > :nth-child(3) > :nth-child(1){
+	margin-top: 80px;
+	margin-bottom: 60px;
+	font-size: 38px;
+	color: #fff;
+	font-weight: bold;
+}
+#publish{
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+#publish > :first-child{
+	display: flex;
+	justify-content: center;
+}
+#publish >:last-child{
+	display: flex;
+	gap: 8px;
+}
+#Front-end{
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+#Front-end > :first-child{
+	display: flex;
+	justify-content: center;
+}
+#Front-end >:last-child{
+	display: flex;
+	gap: 8px;
+}
+#Back-end{
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+#Back-end > :first-child{
+	display: flex;
+	justify-content: center;
+}
+#Back-end >:last-child{
+	display: flex;
+	gap: 8px;
+}
+#ETC{
+	margin-bottom: 80px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+#ETC > :first-child{
+	display: flex;
+	justify-content: center;
+}
+#ETC >:last-child{
+	display: flex;
+	gap: 8px;
+}
+main > :nth-child(4){
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	background-color: #6cdab2;
+}
+main > :nth-child(4) > :nth-child(1){
+	margin-top: 80px;
+	margin-bottom: 80px;
+	font-size: 38px;
+	color: #fff;
+	font-weight: bold;
+}
+main > :nth-child(4) > :last-child{
+	margin-bottom: 80px;
+
+}
+.project-item{
+	width: 610px;
+	height: 367px;
+	display: flex;
+	box-shadow: 0 3px 6px rgba(0,0,0,.2), 0 3px 6px rgba(0,0,0,.2);
+}
+.project-item > :first-child{
+	width: 262px;
+	height: 367px;
+	background-image: url(./projectimg1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.project-item > :last-child{
+	margin: auto;
+	width: 348px;
+	height: 367px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 24px;
+}
+.project-item > :last-child > :nth-child(1){
+	font-size: 30px;
+	font-weight: bold;
+}
+.project-item > :last-child > :nth-child(2){
+	font-size: 20px;
+}
+
+#button1{
+	width: 100px;
+	height: 32px;
+	border: 1px solid #000;
+	text-align: center;
+	cursor: pointer;
+}
+#button1:hover{
+	background-color: #d9fdf0;
+}
+#button1 > p{
+	padding: 8px;
+}
+/*--------------------------------------------*/
+
+.JS{
+	width: 114px;
+	height: 116px;
+	background-image: url(./js.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 30px;
+	box-shadow: 0 3px 6px rgba(0,0,0,.2), 0 3px 6px rgba(0,0,0,.2);
+}
+.JS:hover,.HTML:hover,.CSS:hover,.VUE:hover,.REACT:hover,.JAVA:hover,.NODEJS:hover,
+.GRAPHQL:hover,.etc1:hover,.etc2:hover,.etc3:hover{
+	transform: scale(1.1);
+	transition-duration: 0.5s;
+}
+#Tried{
+	text-align: center;
+	line-height: 116px;
+	background: black;
+	color: #fff;
+	background-color: rgb(0 0 0 / 80%);
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 1s,visibility 1s;
+	border-radius: 30px;
+}
+.JS:hover> #Tried,.HTML:hover > #Tried,.CSS:hover > #Tried,.VUE:hover > #Tried,
+.REACT:hover > #Tried,.JAVA:hover>#Tried,.NODEJS:hover > #Tried,.GRAPHQL:hover > #Tried,
+.etc1:hover > #Tried,.etc2:hover > #Tried,.etc3:hover > #Tried{
+	
+	opacity: 1;
+	visibility: visible;
+	
+}
+.HTML{
+	width: 114px;
+	height: 116px;
+	background-image: url(./html.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	border-radius: 30px;
+	box-shadow: 0 3px 6px rgba(0,0,0,.2), 0 3px 6px rgba(0,0,0,.2);
+}
+.CSS{
+	width: 114px;
+	height: 116px;
+	background-image: url(./css.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	border-radius: 30px;
+	box-shadow: 0 3px 6px rgba(0,0,0,.2), 0 3px 6px rgba(0,0,0,.2);
+}
+.VUE{
+	width: 114px;
+	height: 116px;
+	background-image: url(./vue.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	border-radius: 30px;
+	box-shadow: 0 3px 6px rgba(0,0,0,.2), 0 3px 6px rgba(0,0,0,.2);
+}
+.REACT{
+	width: 114px;
+	height: 116px;
+	background-image: url(./react.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 30px;
+	box-shadow: 0 3px 6px rgba(0,0,0,.2), 0 3px 6px rgba(0,0,0,.2);
+}
+.JAVA{
+	width: 114px;
+	height: 116px;
+	background-image: url(./java.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	border-radius: 30px;
+	box-shadow: 0 3px 6px rgba(0,0,0,.2), 0 3px 6px rgba(0,0,0,.2);
+}
+.NODEJS{
+	width: 114px;
+	height: 116px;
+	background-image: url(./nodejs.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	border-radius: 30px;
+	box-shadow: 0 3px 6px rgba(0,0,0,.2), 0 3px 6px rgba(0,0,0,.2);
+}
+.GRAPHQL{
+	width: 114px;
+	height: 116px;
+	background-image: url(./graphql.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 30px;
+	box-shadow: 0 3px 6px rgba(0,0,0,.2), 0 3px 6px rgba(0,0,0,.2);
+}
+.etc1{
+	width: 114px;
+	height: 116px;
+	background-image: url(./etc1.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	border-radius: 30px;
+	box-shadow: 0 3px 6px rgba(0,0,0,.2), 0 3px 6px rgba(0,0,0,.2);
+}
+.etc2{
+	width: 114px;
+	height: 116px;
+	background-image: url(./etc2.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	border-radius: 30px;
+	box-shadow: 0 3px 6px rgba(0,0,0,.2), 0 3px 6px rgba(0,0,0,.2);
+}
+.etc3{
+	width: 114px;
+	height: 116px;
+	background-image: url(./etc3.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 30px;
+	box-shadow: 0 3px 6px rgba(0,0,0,.2), 0 3px 6px rgba(0,0,0,.2);
+}
+footer{
+	margin-top: 80px;
+	margin-bottom: 80px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+
+}
+footer > :first-child{
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+	
+}
+footer > :first-child > :nth-child(1){
+	width: 44px;
+	height: 44px;
+	
+	background-image: url(./github.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	filter: invert(75%) sepia(90%) saturate(226%) hue-rotate(98deg) brightness(90%) contrast(88%);
+}
+footer > :first-child > :nth-child(2){
+	width: 44px;
+	height: 44px;
+	background-image: url(./tistory.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	filter: invert(75%) sepia(90%) saturate(226%) hue-rotate(98deg) brightness(90%) contrast(88%);
+}
+footer > :first-child > :nth-child(3){
+	width: 44px;
+	height: 44px;
+	background-image: url(./instagram.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	filter: invert(75%) sepia(90%) saturate(226%) hue-rotate(98deg) brightness(90%) contrast(88%);
+}
+footer > :first-child > :nth-child(4){
+	width: 44px;
+	height: 44px;
+	background-image: url(./facebook.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	filter: invert(75%) sepia(90%) saturate(226%) hue-rotate(98deg) brightness(90%) contrast(88%);
+}
+footer > :last-child{
+	text-align: center;
+}
+footer > :first-child > :nth-child(1):hover,footer > :first-child > :nth-child(2):hover,
+footer > :first-child > :nth-child(3):hover,footer > :first-child > :nth-child(4):hover{
+	cursor: pointer;
+	transform: scale(1.2);
+	transition-duration: 0.5s;
+}
